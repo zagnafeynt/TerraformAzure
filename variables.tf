@@ -1,28 +1,16 @@
-variable "resource_group_location" {
-  type        = string
-  default     = "eastus2"
-  description = "Location of the resource group."
-}
-
-variable "resource_group_name_prefix" {
-  type        = string
-  default     = "rg"
-  description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
-}
-
 variable "prefix" {
   description = "The prefix which should be used for all resources in this example"
+  default     = "terra01"
 }
 
 variable "location" {
-  type        = string
-  default     = "eastus2"
   description = "The Azure Region in which all resources in this example should be created."
+  default     = "eastus2"
 }
 
 variable "admin_username" {
   type        = string
-  default     = "admin"
+  default     = "admin228"
   description = "The admin username for the VM being created."
 }
 
